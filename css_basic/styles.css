@@ -1,44 +1,25 @@
-/* styles.css */
-
 body {
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #917b7b;
+  padding: 10px;
+  text-align: center;
 }
 
 main {
-  display: flex;
-  flex-direction: row;
-  flex: auto;
+  display: flex; /* Create a flex container */
 }
 
-article {
-  flex: 2;
-  overflow-y: auto;
-  /* Add your custom article styles here */
-  background-color: #f5f5f5; /* Example: light gray background */
+article, aside {
+  flex: 1; /* Equal width for article and aside */
   padding: 20px;
 }
 
-aside {
-  flex: 1;
-  overflow-y: auto;
-  /* Add your custom aside styles here */
-  background-color: #e0e0e0; /* Example: lighter gray background */
-  padding: 20px;
-}
-
-/* Media Query for Smartphone Viewport */
-@media (max-width: 768px) {
-  body.works_on_smartphone {
-    flex-direction: column;
-  }
-
-  main {
-    flex-direction: column;
-  }
-}
-
-/* Logo Styling */
-.logo {
-  font-size: 2em; /* Make the logo character larger */
+footer {
+  background-color: #574b4b;
+  padding: 10px;
+  text-align: center;
 }
